@@ -1,2 +1,3 @@
 "https://github.com/informjs/inform-daemon" "daemon"
 "https://github.com/informjs/inform-client" "client"
+"https://github.com/informjs/inform-shared" "shared"

@@ -4,3 +4,4 @@
 
 /.*
 !/.git*
+/plugins/tropo-sms/

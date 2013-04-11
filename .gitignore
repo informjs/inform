@@ -2,7 +2,8 @@
 /client/
 /shared/
 
+/plugins/tropo-sms/
+/plugins/example/
+
 /.*
 !/.git*
-/plugins/tropo-sms/
-/plugins/inform-plugin-example/

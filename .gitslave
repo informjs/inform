@@ -2,3 +2,4 @@
 "https://github.com/informjs/inform-client" "client"
 "https://github.com/informjs/inform-shared" "shared"
 "git@github.com:informjs/tropo-sms.git" "plugins/tropo-sms"
+"git@github.com:informjs/inform-plugin-example.git" "plugins/inform-plugin-example"

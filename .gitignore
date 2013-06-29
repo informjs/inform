@@ -1,6 +1,6 @@
 /daemon/
-/client/
 /shared/
+/clients/cli/
 
 /plugins/tropo-sms/
 /plugins/example/

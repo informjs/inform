@@ -3,47 +3,48 @@ MAINTAINER Bailey Stoner <code@monokro.me>
 
 
 RUN apk update
-RUN apk upgrade
-
 RUN apk add build-base
 RUN apk add nodejs
 RUN apk add python
-RUN apk add libzmq zeromq-dev
+RUN apk add zeromq libzmq zeromq-dev
+
+
+RUN ldconfig /
+
 
 RUN npm install -g coffee-script
 
 
-ADD . /opt/informjs/
-
-
+ADD shared /opt/informjs/shared
 WORKDIR /opt/informjs/shared
-RUN rm -rf node_modules
 RUN npm install
 RUN npm link
 RUN make
 
 
+ADD plugins /opt/informjs/plugins
+
+
 WORKDIR /opt/informjs/plugins/tropo-sms
-RUN rm -rf node_modules
 RUN npm install
 RUN npm link
 RUN npm link inform-shared
-RUN make
 
 
 WORKDIR /opt/informjs/plugins/tropo-sms
-RUN rm -rf node_modules
 RUN npm install
 RUN npm link
-RUN make
 
 
+ADD daemon /opt/informjs/daemon
 WORKDIR /opt/informjs/daemon
-RUN rm -rf node_modules
 RUN npm install
 RUN npm link
 RUN npm link inform-shared
 RUN npm link inform-daemon
+
+
+ADD etc/informd.example.yml /etc/
 
 
 EXPOSE 5000

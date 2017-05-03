@@ -20,6 +20,7 @@ WORKDIR /opt/informjs/shared
 RUN rm -rf node_modules
 RUN npm install
 RUN npm link
+RUN make
 
 
 WORKDIR /opt/informjs/plugins/tropo-sms
@@ -27,6 +28,14 @@ RUN rm -rf node_modules
 RUN npm install
 RUN npm link
 RUN npm link inform-shared
+RUN make
+
+
+WORKDIR /opt/informjs/plugins/tropo-sms
+RUN rm -rf node_modules
+RUN npm install
+RUN npm link
+RUN make
 
 
 WORKDIR /opt/informjs/daemon
@@ -40,5 +49,4 @@ RUN npm link inform-daemon
 EXPOSE 5000
 
 
-WORKDIR /opt/informjs/daemon
 CMD ["bin/informd"]

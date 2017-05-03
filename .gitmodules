@@ -7,3 +7,6 @@
 [submodule "shared"]
 	path = shared
 	url = https://github.com/informjs/inform-shared
+[submodule "plugins/tropo-sms"]
+	path = plugins/tropo-sms
+	url = https://github.com/informjs/inform-plugin-tropo-sms

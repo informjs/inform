@@ -1,3 +1,6 @@
 [submodule "daemon"]
 	path = daemon
 	url = https://github.com/informjs/inform-daemon
+[submodule "inform-client-cli"]
+	path = inform-client-cli
+	url = https://github.com/informjs/inform-client-cli

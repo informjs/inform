@@ -1,15 +1,19 @@
 [submodule "daemon"]
 	path = daemon
 	url = https://github.com/informjs/inform-daemon
-[submodule "inform-client-cli"]
-	path = inform-client-cli
+
+[submodule "clients/cli"]
+	path = clients/cli
 	url = https://github.com/informjs/inform-client-cli
+
 [submodule "shared"]
 	path = shared
 	url = https://github.com/informjs/inform-shared
+
 [submodule "plugins/tropo-sms"]
 	path = plugins/tropo-sms
 	url = https://github.com/informjs/inform-plugin-tropo-sms
+
 [submodule "plugins/example"]
 	path = plugins/example
 	url = https://github.com/informjs/inform-plugin-example

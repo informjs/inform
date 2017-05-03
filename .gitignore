@@ -1,9 +1,2 @@
-/daemon/
-/shared/
-/clients/cli/
-
-/plugins/tropo-sms/
-/plugins/example/
-
 /.*
 !/.git*

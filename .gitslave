@@ -1,5 +1,0 @@
-"git@github.com:informjs/inform-daemon" "daemon"
-"git@github.com:informjs/inform-client-cli" "clients/cli"
-"git@github.com:informjs/inform-shared" "shared"
-"git@github.com:informjs/inform-plugin-tropo-sms.git" "plugins/tropo-sms"
-"git@github.com:informjs/inform-plugin-example.git" "plugins/example"

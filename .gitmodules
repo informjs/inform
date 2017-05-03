@@ -10,3 +10,6 @@
 [submodule "plugins/tropo-sms"]
 	path = plugins/tropo-sms
 	url = https://github.com/informjs/inform-plugin-tropo-sms
+[submodule "plugins/example"]
+	path = plugins/example
+	url = https://github.com/informjs/inform-plugin-example

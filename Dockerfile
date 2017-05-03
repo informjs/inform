@@ -44,7 +44,7 @@ RUN npm link inform-shared
 RUN npm link inform-daemon
 
 
-ADD etc/informd.example.yml /etc/
+ADD etc/informd.example.yml /etc/informd.yml
 
 
 EXPOSE 5000
